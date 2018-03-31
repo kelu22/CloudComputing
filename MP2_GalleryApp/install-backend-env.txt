@@ -1,0 +1,12 @@
+#!/bin/bash
+set -e -x
+cd /home/ubuntu
+runuser -l ubuntu -c 'git clone git@github.com:illinoistech-itm/rnoblejassampedro.git && echo "cloned"'
+cd rnoblejassampedro/ITMO-544/MP2/myApp/views/
+mkdir images
+cd /home/ubuntu
+cd rnoblejassampedro/ITMO-544/MP2/myApp/
+cp /home/ubuntu/node_modules -r .
+npm install sharp
+sudo npm install forever -g
+forever start server.js
