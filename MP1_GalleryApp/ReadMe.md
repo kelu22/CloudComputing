@@ -1,9 +1,9 @@
 # Abstract
 
 Deployment of a web application that includes three pages:
-	- Index page: A welcome page that has links to the gallery and submit page
-	- Gallery page: Reads your database and retrieves all of the before and after pictures
-	- Submit page (form): Upon submission of the form, images are placed in an S3 bucket, and a URL and information relating to that job is entered.
+	-   Index page: A welcome page that has links to the gallery and submit page
+	-   Gallery page: Reads your database and retrieves all of the before and after pictures
+	-   Submit page (form): Upon submission of the form, images are placed in an S3 bucket, and a URL and information relating to that job is entered.
 
 For the infraestructure, we are going to use AWS tools:
 	- Load Balancer with sticky-bits
