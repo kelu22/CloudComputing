@@ -1,0 +1,73 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+        <base href="/">
+    <title>Dashboard application</title>
+     <base href="/">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style type="text/css">
+      html {
+        text-align: center;
+      }
+      h2{
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-image: url(images/fondo.png);
+          background-size: cover;
+      }
+      li {
+          float: left;
+      }
+      li a {
+          font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 18px 20px;
+          text-decoration: none;
+          background-color: #4CAF50;
+      }
+      li a:hover {
+          background-color: #008000;
+      }
+      #container {
+          vertical-align: middle;
+          display: inline-block;
+      }
+      #contentPannel{
+        text-align: left;
+        padding-left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="results">  
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/instancesMetrics">View EC2 metrics dashboard</a></li>
+        <li><a href="/sqsMetrics">View SQS metrics dashboard</a></li>
+      </ul>
+    </div>
+    <h2>SQS Metrics pannel</h2>
+     <div class="w3-container" id="container">
+    <div class="w3-card-2" style="width:100%; padding-bottom: 20px">
+      <header class="w3-container w3-green">
+      <p> Here you can see the different metrics for the SQS that is currently on use...</p>
+    </header>
+    <div id="contentPannel">
+    <% measures.forEach(function(m) { %>
+          <p><strong><%= m.metric %></strong>: <%= m.values %></p>
+    <% }); %>
+  </div>
+  </div>
+</div>
+  </body>
+  </html>
