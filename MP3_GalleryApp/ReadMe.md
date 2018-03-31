@@ -1,9 +1,9 @@
 # Abstract
 
 Dashboard application for the GalleryApp that shows:
-	- Status’ of jobs in the database
-	- All of the items in the SQS Queue (Cloudwatch Metrics)
-	- CPU usage for your instances
+* Status’ of jobs in the database
+* All of the items in the SQS Queue (Cloudwatch Metrics)
+* CPU usage for your instances
 
 # Usage
 
