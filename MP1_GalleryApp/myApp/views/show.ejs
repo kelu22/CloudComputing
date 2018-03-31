@@ -1,0 +1,61 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+        <base href="/">
+    <title>Gallery application</title>
+     <base href="/">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <style type="text/css">
+      html {
+        text-align: center;
+      }
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-image: url(images/fondo.png);
+          background-size: cover;
+      }
+      li {
+          float: left;
+      }
+      li a {
+          font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 18px 20px;
+          text-decoration: none;
+          background-color: #4CAF50;
+      }
+      li a:hover {
+          background-color: #008000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="results">  
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/upload">Upload an image</a></li>
+        <li><a href="/show">Gallery</a></li>
+      </ul>
+    </div>
+    <h2>Image gallery</h2>
+    <p> If you don't see your images right away, just refresh the page.</p>
+        <% images.forEach(function(image) { %>
+        <div class="panel panel-success">
+        <div class="panel-body">
+          <p> <strong>Name:</strong> <%= image.name %> </p>
+          <p> <strong>Email:</strong> <%= image.email %> </p>
+          <p><strong>Phone:</strong> <%= image.phone %> </p>
+          <p><strong>Images:</strong> Displaying first the image transformed and then the original image:<p>
+          <img style="width:200px;height:200px;"src="<%= image.bwurl %>"/>
+          <img style="width:200px;height:200px;"src="<%= image.url %>"/>
+        </div>
+      </div>
+    <% }); %>
+  </body>
+  </html>
