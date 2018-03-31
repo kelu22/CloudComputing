@@ -1,16 +1,16 @@
 # Abstract
 
 Deployment of a web application that includes three pages:
-	-   Index page: A welcome page that has links to the gallery and submit page
-	-   Gallery page: Reads your database and retrieves all of the before and after pictures
-	-   Submit page (form): Upon submission of the form, images are placed in an S3 bucket, and a URL and information relating to that job is entered.
+	* Index page: A welcome page that has links to the gallery and submit page
+	* Gallery page: Reads your database and retrieves all of the before and after pictures
+	* Submit page (form): Upon submission of the form, images are placed in an S3 bucket, and a URL and information relating to that job is entered.
 
 For the infraestructure, we are going to use AWS tools:
-	- Load Balancer with sticky-bits
-	- AutoScaling group (desired state 3 EC2 instances) w/Launch configuration
-	- 1 RDS instance (MySQL)
-	- S3 Bucket for storing before processing (raw image uploaded by the user)
-	- S3 Bucket for storing after processing(image in black and white)
+	* Load Balancer with sticky-bits
+	* AutoScaling group (desired state 3 EC2 instances) w/Launch configuration
+	* 1 RDS instance (MySQL)
+	* S3 Bucket for storing before processing (raw image uploaded by the user)
+	* S3 Bucket for storing after processing(image in black and white)
 
 # Usage
 
