@@ -27,3 +27,5 @@ Follow the next steps for a functional local dashboard application:
 -  The MP2 downloads automatically the cloud gallery application from github.
 -  We have used 'Average' statistics for EC2 instances and 'Sum' statistics for queue.
 
+# Main infraestructure
+
