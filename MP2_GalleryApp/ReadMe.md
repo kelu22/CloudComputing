@@ -27,3 +27,7 @@ For running delete_env.sh script, please execute the next command from your vagr
 - The role choosen must have IAMFullAccess and Power Access.
 - The URL of the SQS, the ARN of the SNS and the endpoint of the RDS have been harcoded in the scripts.
 - All the scripts provided in this folder are available in the same directory in the moment of launching the create-env.sh script.
+
+# Infraestructure
+
+![aws_galleryinf](https://user-images.githubusercontent.com/6637058/45384759-87276400-b5d4-11e8-8d30-6000ff6ea785.png)
